@@ -1,18 +1,1 @@
-
-header, footer{
-	background-color: #ccc;
-	padding: 15px;
-}
-
-footer{
-
-}
-
-h1{
-	margin: 10px 0;
-}
-
-/* Side nav */
-.sidebar{
-	
-}
+footer,header{background-color:#ccc;padding:15px}header h1{margin:10px 0}.content{height:100%;display:table-row}.row.match-my-cols{overflow:hidden}.row.match-my-cols [class*=col-]{margin-bottom:-99999px;padding-bottom:99999px}a,a:link,a:visited{color:#eb5424}.sidebar{background:#e1e1e1;padding:0}.sidebar a{font-weight:700;transition:all .5s ease}.sidebar a:hover{padding-left:25px}
