@@ -5,10 +5,12 @@ header, footer{
 	padding: 15px;
 }
 
+
 header{
 	h1{
 		margin: 10px 0;
 	}
+	overflow: hidden;
 }
 
 footer{
@@ -19,10 +21,6 @@ h1{
 	
 }
 
-.content{
-	height: 100%;
-    display: table-row;
-}
 
 .row.match-my-cols {
     overflow: hidden; 
@@ -44,8 +42,25 @@ a, a:link, a:visited{
 	a{
 		font-weight: bold;
 		transition: all 0.5s ease;
+		& > span{
+			transition: all 0.5s ease;
+			display: inline-block;
+		}
 		&:hover{
-			padding-left: 25px;
+			padding-left: 35px;
+			& > span{
+				transform: rotateY(360deg);
+			}
 		}
 	}
+}
+
+/* transitions for page load */
+.fade-in{
+    opacity:0;
+	transition: opacity 1s ease;
+}
+.slide-in{
+	transform: translateX(-1000px);
+	transition:  transform 1s ease;
 }
